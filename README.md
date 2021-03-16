@@ -28,7 +28,8 @@ I began with the [PyTorch tutorial on finetuning pretrained models](https://pyto
   <figcaption>SqueezeNet took a really long time to train. The first two training sets are on the subset of the training data, while the final training set is done on the entire training data. Thankfully the validation accuracy peaked off on the third run!</figcaption>
 </figure>
 
-<br/>
+<br>
+
 _Note: In order for all 38k images to fit on the Google Colab disk, the images were all resized to 128x128. An easy way to increase the classifier accuracy is to encode the images at a higher resolution, and train the models with batches of the training data. However, to maximize efficiency, I kept my images at a small enough resolution so that the entire training dataset could be fit on disk._
 
 ## Ensembling with Linear Combinations
